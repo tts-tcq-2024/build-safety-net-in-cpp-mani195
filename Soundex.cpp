@@ -176,12 +176,7 @@ std::string processAllCharacter(std::string& name)
 
 std::string generateSoundex(std::string name)
 {
-  if (name.empty())
-  {
-    return "";
-  }
-
-  if (ispunct(name[0]))
+  if (name.empty() || ispunct(name[0]))
   {
     return "";
   }
