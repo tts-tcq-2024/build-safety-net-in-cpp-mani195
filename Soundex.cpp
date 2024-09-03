@@ -176,7 +176,7 @@ std::string processAllCharacter(std::string& name)
 
 std::string generateSoundex(std::string name)
 {
-  if (name.empty() || ispunct(name[0]))
+  if (name.empty())
   {
     return "";
   }
