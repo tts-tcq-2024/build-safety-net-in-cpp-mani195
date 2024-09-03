@@ -1,4 +1,7 @@
 #include "Soundex.h"
+#include <string>
+#include <cctype>
+#include <unordered_map>
 
 char getSoundexCode(char c)
 {
