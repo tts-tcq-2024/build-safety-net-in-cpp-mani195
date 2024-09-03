@@ -54,7 +54,7 @@ TEST(SoundexTest, HandleOnlyNumbers) {
     EXPECT_EQ(generateSoundex("6630"), "6000");
 }
 
-TEST(SoundexTest, HandleNumber&String) {
+TEST(SoundexTest, HandleNumberAndString) {
     EXPECT_EQ(generateSoundex("6630ff"), "6100");
      EXPECT_EQ(generateSoundex("6630fht"), "6130");
     EXPECT_EQ(generateSoundex("6630aei"), "6000");
