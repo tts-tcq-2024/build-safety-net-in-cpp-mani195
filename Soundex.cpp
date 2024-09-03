@@ -37,9 +37,9 @@ bool isStringNotFound(const std::string& name)
 {
   if (name.empty() || (ispunct(name[0])))
   {
-    return true
+    return true;
   }
-  return false
+  return false;
 }
 
 bool isFirstTwoLettersSame(const std::string& name)
