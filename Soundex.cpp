@@ -33,6 +33,15 @@ char getSoundexCode(char c)
   return '0';  // For A E I O U H W Y
 }
 
+bool isStringNotFound(const std::string& name)
+{
+  if (name.empty() || (ispunct(name[0])))
+  {
+    return true
+  }
+  return false
+}
+
 bool isFirstTwoLettersSame(const std::string& name)
 {
   if (name.length() < 2)
@@ -176,7 +185,7 @@ std::string processAllCharacter(std::string& name)
 
 std::string generateSoundex(std::string name)
 {
-  if (name.empty())
+  if (isStringNotFound(name)
   {
     return "";
   }
