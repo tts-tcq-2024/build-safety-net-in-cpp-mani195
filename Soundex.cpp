@@ -185,7 +185,7 @@ std::string processAllCharacter(std::string& name)
 
 std::string generateSoundex(std::string name)
 {
-  if (isStringNotFound(name)
+  if (isStringNotFound(name))
   {
     return "";
   }
